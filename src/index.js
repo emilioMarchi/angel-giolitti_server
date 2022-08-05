@@ -6,7 +6,7 @@ const path = require('path')
 require('dotenv').config()
 const cors = require('cors');
 let corsOptions = {
-    origin: 'http://www.angelgiolitti.com.ar.s3-website-us-east-1.amazonaws.com/*', // Reemplazar con dominio
+    origin: 'http://www.angelgiolitti.com.ar.s3-website-us-east-1.amazonaws.com', // Reemplazar con dominio
     optionsSuccessStatus: 200,
 }
 
