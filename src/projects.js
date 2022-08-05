@@ -27,7 +27,7 @@ projects = [
         type: 'documental',
         _idx: 1,
         members: [],
-        year: 0,
+        year: 1996,
         img: {perfil:'/projects/lo-inconcebible/media/lo-inconcebible-perfil.jpeg',
         portada:'/projects/lo-inconcebible/media/lo-inconcebible-portada.jpeg'},
         bio: 'Biografia de proyecto para descripcion',
