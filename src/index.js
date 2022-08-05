@@ -5,7 +5,6 @@ const bodyparser = require('body-parser');
 const path = require('path')
 require('dotenv').config()
 const cors = require('cors');
-const mongoose = require('mongoose')
 let corsOptions = {
     origin: 'http://localhost:3000', // Reemplazar con dominio
     optionsSuccessStatus: 200,
@@ -21,11 +20,11 @@ app.use(cors(corsOptions));
 //Controllers
 
 
-//import routers
-const proyects = require('./routes/proyectsRouter');
+//import routes
+const projects = require('./routes/projectsRouter');
 
 //use routers
-app.use('/proyects', proyects)
+app.use('/projects', projects)
 
 //routes
 app.get('/', (req,res) => {
