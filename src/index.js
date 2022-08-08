@@ -6,9 +6,10 @@ const path = require('path')
 require('dotenv').config()
 const cors = require('cors');
 let corsOptions = {
-    origin: ['https://angelgiolitti.com.ar/', 'https://www.angelgiolitti.com.ar/'], 
-    credentials: true,
-    optionsSuccessStatus: 200,
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204
 }
 
 //config
@@ -29,7 +30,7 @@ app.use('/projects', projects)
 
 //routes
 app.get('/', (req,res) => {
-    res.json({'msj':'nuevos cambios'})
+    res.json({'msj':'otros cambios'})
 })
 
 
