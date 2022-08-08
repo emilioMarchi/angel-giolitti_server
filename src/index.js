@@ -29,7 +29,7 @@ app.use('/projects', projects)
 
 //routes
 app.get('/', (req,res) => {
-    res.json({'msj':'todo ok'})
+    res.json({'msj':'nuevos cambios'})
 })
 
 
